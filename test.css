@@ -1,0 +1,103 @@
+.hero1 {
+    height: 75%;
+    width: 65%;
+    background: linear-gradient(orangered, rgb(241, 84, 31), rgb(255, 153, 0));
+    filter: blur(17px);
+    /* border-radius: 50% ; */
+
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 40%;
+    position: absolute;
+    right: 0%;
+    /* z-index: 12; */
+    animation: animate 4s linear 0s infinite alternate;
+}
+
+@keyframes animate {
+    from {
+        transform: translate(0%, 1%)rotate(0deg);
+    }
+
+    to {
+        transform: translate(0%, -1%)rotate(-30deg);
+    }
+}
+
+.hero2 {
+    height: 75%;
+    width: 65%;
+    background-color: #FE330A;
+    /* background-color: #34fe0c; */
+    border-radius: 45%;
+    position: absolute;
+    right: 4%;
+    filter: blur(20px);
+    animation: animate2 5s linear 0s infinite alternate;
+}
+
+@keyframes animate2 {
+    from {
+        transform: translate(-10%, -10%);
+    }
+
+    to {
+        transform: translate(10px, 10px)rotate(35deg);
+    }
+}
+
+.hero3 {
+    height: 75%;
+    width: 65%;
+    border-radius: 30%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    right: 0%;
+    filter: blur(20px);
+    background-color: #0c85fe;
+    background-color: #FE330A;
+    animation: animate3 3s linear 0s infinite alternate;
+}
+
+@keyframes animate3 {
+    from {
+        transform: translate(0%, 0%);
+    }
+
+    to {
+        transform: translate(-10%, 15%)rotate(5deg);
+    }
+}
+.hero4 {
+    width: 32%;
+    height: 45%;
+    border-top-left-radius: 75%;
+    position: absolute;
+    right: 0%;
+    filter: blur(20px);
+    background-color: deepskyblue;
+    background-color: #FE330A;
+    animation: animate4 3s linear 0s infinite alternate;
+}
+
+@keyframes animate4 {
+    from {
+        transform: translate(0%, -15%);
+    }
+
+    to {
+        transform: translate(0%, 15%);
+    }
+}
+
+.Hero-container {
+    width: 60vw;
+    height: 92vh;
+    position: relative;
+    padding: 5%;
+    overflow: hidden;
+    position: absolute;
+    right: 0%;
+    bottom: -65%;
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+ 
+
+/*  page 3 CSS part */
+.page3{
+    /* min-height: 100vh; */
+    /* height: auto; */
+    height: 144vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    /* padding-bottom: 5vw ; */
+    background-color: #0dff00;
+    /* page-break-after: always; Force a page break after page 3 */
+    
+}
+.page3 .element-container{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+
+}
+.div-box{
+    height: 18vh;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.div-box h1{
+    font-size: 54px;
+    letter-spacing: -2px;
+    font-family: NeueHassDisplayMediu, sans-serif;
+    font-weight: 700;
+    z-index: 5;
+}
+.div-box #spn{
+    margin-right: 9px;
+    z-index: 5;
+}
+.div-box  #spn #span1,#span2{
+    font-size: 15px;
+    font-family: neueHassDisplayThin;
+    opacity: 0.9;
+    
+}
+
+.div-box #spn #span2{
+    opacity: 0.5;
+}
+
+.elem-style{
+    width: 100%;
+    height: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 4;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.div-box:hover{
+    .elem-style{
+        top: 0%;
+    }
+}
