@@ -26,7 +26,7 @@ body {
 .page3 .element-container{
     height: 100%;
     width: 100%;
-    background-color: blueviolet;
+    background:linear-gradient(to right top ,black,red)
 
 }
 .div-box{

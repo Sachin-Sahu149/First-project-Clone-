@@ -6,10 +6,6 @@ const scroll = new LocomotiveScroll({
 
 let featuredSection = document.querySelectorAll(".div-box");
 let fixedImage = document.querySelector(".fixed-image");
-// featuredSection.forEach(function(e){
-//     fixedImage.style.display = "none";
-    
-// });
 featuredSection.forEach(function(e){
     e.addEventListener("mouseover",()=>{
         let image = e.getAttribute("image-url");
@@ -26,3 +22,6 @@ featuredSection.forEach(function(e){
         fixedImage.style.display = "none";
     })
 });
+
+let input = document.querySelector(".inp");
+input.addEventListener("")
