@@ -15,13 +15,27 @@ featuredSection.forEach(function(e){
         fixedImage.style.backgroundRepeat = "no-repeat";
         fixedImage.style.backgroundSize = "cover";
         fixedImage.style.display = "block";
-    })
-});
-featuredSection.forEach(function(e){
+    });
+
     e.addEventListener("mouseleave",()=>{
         fixedImage.style.display = "none";
-    })
+    });
 });
+// featuredSection.forEach(function(e){
+//     e.addEventListener("mouseleave",()=>{
+//         fixedImage.style.display = "none";
+//     })
+// });
 
-let input = document.querySelector(".inp");
-input.addEventListener("")
+// let input = document.querySelector(".inp");
+// input.addEventListener("")
+
+function slider_Style() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+    });
+
+}
+slider_Style();
